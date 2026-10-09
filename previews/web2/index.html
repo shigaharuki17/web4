@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Time!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <section class="screen active" id="start-screen" aria-labelledby="start-title">
+      <h1 id="start-title">Quiz Time!</h1>
+      <p>Test your knowledge with these fun questions</p>
+      <button class="primary-btn" id="start-btn" type="button">Start Quiz</button>
+    </section>
+
+    <section class="screen" id="quiz-screen" aria-labelledby="question-text">
+      <h2 id="question-text" tabindex="-1"></h2>
+      <div class="quiz-info">
+        <p>Question <span id="current-question">1</span> of <span id="total-questions">5</span></p>
+        <p>Score: <span id="score">0</span></p>
+      </div>
+      <div id="answers-container" class="answers-container"></div>
+      <p id="answer-feedback" class="sr-only" role="status"></p>
+      <div class="progress-bar" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0">
+        <div id="progress"></div>
+      </div>
+    </section>
+
+    <section class="screen" id="result-screen" aria-labelledby="result-title">
+      <h2 id="result-title" tabindex="-1">Quiz Results</h2>
+      <div class="result-info">
+        <p>You scored <span id="final-score">0</span> out of <span id="max-score">5</span></p>
+        <p id="result-message"></p>
+      </div>
+      <button class="primary-btn" id="restart-btn" type="button">Restart Quiz</button>
+    </section>
+  </main>
+</body>
+</html>

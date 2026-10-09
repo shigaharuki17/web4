@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form id="registration-form" novalidate>
+            <h1>Register</h1>
+            <div class="form-item">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" autocomplete="username" aria-describedby="username-error" required>
+                <small id="username-error" aria-live="polite"></small>
+            </div>
+            <div class="form-item">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email" autocomplete="email" aria-describedby="email-error" required>
+                <small id="email-error" aria-live="polite"></small>
+            </div>
+            <div class="form-item">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" autocomplete="new-password" aria-describedby="password-error" required>
+                <small id="password-error" aria-live="polite"></small>
+            </div>
+            <div class="form-item">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" autocomplete="new-password" aria-describedby="confirmPassword-error" required>
+                <small id="confirmPassword-error" aria-live="polite"></small>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
